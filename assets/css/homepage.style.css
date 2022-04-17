@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+    margin: 0px ;
+    padding: 0px ;
+    list-style-type: none !important;
+    text-decoration: none !important;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* header styles starts below */
+header {
+    height: 100px;
+    top: 0px;
+    position: sticky;
+    z-index: 10;
+    background-color: #000000;
+}
+
+.navbar-html {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    font-size: 18px;
+}
+
+ul {
+    margin-bottom: 0px !important;
+}
+
+.menu > li {
+    border-left: 1px solid #929090;
+    border-right: 1px solid #929090;
+    padding: 34px;
+    color: white;
+    cursor: pointer;
+}
+
+li > a {
+    color: white;
+}
+
+li > a:hover {
+    color: white;
+}
+
+.menu > li:hover {
+    border-left: 1px solid #ffd61f;
+    border-right: 1px solid #ffd61f;
+    background-color: #ffd61f;
+    color: black;
+}
+
+.logo-container {
+    height: 100px;
+    width: 225px;
+}
+
+.logo-container > img {
+    width: 100%;
+    height: 100%;
+}
+
+.hamburger {
+    display: none;
+}
+
+.slider-container {
+    width: 100%;
+}
+
+.custom-height{
+    height:600px !important;
+}
+
+.carousel-item {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.carousel-item > img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.carousel-control-prev-icon {
+   color: red !important;
+}
+
+
+/* icon container styles starts here */
+#icon-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.icon-container-child {
+    position: relative;
+    height: 400px;
+    width: 25vw;
+    cursor: pointer;
+    padding: 30px;
+    color: white;
+}
+
+.icon-container-child-1 {
+    background-color: #6a803f;
+}
+
+.icon-container-child-2 {
+    background-color: #808080;
+}
+
+.icon-container-child-3 {
+    background-color: #000000;
+}   
+
+.icon-container-child-4 {
+    background-color: #83a846;
+}
+
+.child-icon {
+    height: 100px;
+    width: 100px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: auto;
+    padding: 20px;
+}
+
+.child-icon-para {
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+}
+
+.child-icon-sub-para {
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+}
+
+
+/* icon container styels ends abvoe */
+
+/* summary container styles starts below */
+
+#home-summary-container {
+    height: auto;
+    width: 100%;
+    color: #000000;
+    background-color: white;
+}
+
+.summary-heading {
+    text-align: center;
+    font-weight: bolder;
+    padding: 30px;
+}
+
+.summary-subheading-container {
+    height: auto;
+    width: 50%;
+    margin: auto;
+}
+
+.summary-subheading {
+    font-size: 18px;
+    line-height: 30px;
+    word-spacing: 3px;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* summary container styles ends above */
+
+/* icon container styles starts below */
+#pop-up-container {
+    padding: 20px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #808080;
+}
+
+.pop-up-child {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    
+}
+
+.pop-up-child >img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* icon container styles ends above */
+
+/* classess styles */
+#classes-container {
+    height: auto;
+    width: 100%;
+}
+
+.classes-heading {
+    font-size: 28px;
+    text-align: center;
+    padding: 20px;
+}
+
+.classes-subheading {
+    font-size: 18px;
+    text-align: center;
+}
+
+.classes-parent-container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.classes-child-container {
+    cursor: pointer;
+    height: 300px;
+    width: 25vw;
+    margin: 10px;
+    border: 1px solid #808080;
+    position: relative;
+    overflow: hidden;
+    transform:translateZ(0);
+    transition: transform 0.25s ease-out;
+}
+
+.classes-child-container > img {
+    height: 100%;
+    width: 100%;
+}
+
+.classes-child-container:hover{
+    transform:scale(1.05);
+}
+
+.classes-child-container:hover #class-timing {
+    display: block;
+}
+
+.classes-child-container:hover #class-name {
+    display: block;
+}
+
+
+#class-timing {
+    padding: 10px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 0px;
+    display: none;
+}
+
+#class-name {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    display: none;
+}
+
+
+
+.classes-hidden-part {
+  display: none;
+}
+
+#load-more {
+    width: 100%;
+    height: 50px;
+    background-color: #808080;
+}
+
+#load-more > span {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-variant: small-caps;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+#more-content {
+    height: 100px;
+    width: 100%;
+    background-color: red;
+    display: none;
+}
+
+#load-more:hover #more-content {
+    display: block;
+}
+
+/* classess styles ends above */
+/* daypass styles starts below */
+.day-pass-container {
+    /* background-image: url("/assets/img/slide-3.jpg");  right : for local */
+    /* background-image: url("https://source.unsplash.com/random"); right : for remote images*/
+    background: url("/assets/img/slide-2.jpg");
+}
+
+.day-pass-container > h2 {
+    color: white;
+}
+
+.day-pass-container .summary-subheading  {
+    color: white;
+}
+
+/* daypass styles ends above */
+
+/* form styles starts below */
+.form-container {
+    margin: auto;
+    width: 50%;
+}
+
+.form-control:focus {
+    border: 1px solid black !important; /* !important because i'm overriding bootstrap default property so important will take priority */
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.submit-button {
+    background-color: black !important;
+    color: white !important;
+    border: 1px solid black !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.submit-button:hover {
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid black !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* form styles ends above */
+
+
+.footer {
+    background-color: #83a846;
+    color: white;
+}
+
+.icons-class {
+    font-size: 24px;
+    padding: 8px;
+}
+
+.footer-heading {
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.copyright-text {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width: 480px) {
+
+    /*mobile responsive styles for navigation bar */
+    .menu {
+        display: none;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin-top: 30px;
+        text-align: center;
+        padding: 16px 0;
+        background-color: #000000;
+        color: white;
+        z-index: 10;
+        box-shadow: 0 1px 10px 0 rgb(0 0 0 / 19% );
+    }
+
+    .hamburger {
+        color: white;
+        font-size: 24px;
+        display: block;
+    }
+
+    input[type=checkbox]:checked ~ .menu {
+        display: block;
+    }
+
+    /* mobile responsive styels for icon container */
+    #icon-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .icon-container-child {
+        position: relative;
+        height: 400px;
+        width: 100vw;
+        cursor: pointer;
+        padding: 30px;
+        color: white;
+    }
+
+    /* mobile responsive styles for summary */
+    .summary-subheading-container {
+        height: auto;
+        width: 100%;
+        margin: auto;
+        text-align: justify;
+    }
+
+    /* mobile responsive styles for icons*/
+    #pop-up-container {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #808080;
+    }
+    
+    .pop-up-child {
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    /* mobile responsive styles for classess */
+    .classes-parent-container {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .classes-child-container {
+        cursor: pointer;
+        height: 300px;
+        width: 100vw;
+        margin: 10px;
+        border: 1px solid #808080;
+        position: relative;
+        overflow: hidden;
+        transform:translateZ(0);
+        transition: transform 0.25s ease-out;
+    }
+    /* mobile responsive styles for daypass */
+    .day-pass-container {
+        padding: 10px;
+    }
+
+    .form-container {
+        padding: 10px;
+        width: 90%;
+    } 
+}
