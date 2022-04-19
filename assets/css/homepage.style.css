@@ -52,16 +52,20 @@ li > a {
     color: white;
 }
 
-li > a:hover {
-    color: white;
-}
+/* li > a:hover {
+    color: black;
+} */
 
 .menu > li:hover {
     border-left: 1px solid #ffd61f;
     border-right: 1px solid #ffd61f;
     background-color: #ffd61f;
-    color: black;
 }
+
+/* .menu > li:hover a {
+    color: black;
+} */
+
 
 .logo-container {
     height: 100px;
@@ -82,7 +86,7 @@ li > a:hover {
 }
 
 .custom-height{
-    height:600px !important;
+    height:100vh !important;
 }
 
 .carousel-item {
@@ -107,6 +111,7 @@ li > a:hover {
     height: auto;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .icon-container-child {
@@ -247,7 +252,7 @@ li > a:hover {
     height: 300px;
     width: 25vw;
     margin: 10px;
-    border: 1px solid #808080;
+    /* border: 1px solid #808080; */
     position: relative;
     overflow: hidden;
     transform:translateZ(0);
@@ -255,6 +260,8 @@ li > a:hover {
 }
 
 .classes-child-container > img {
+    object-fit: contain;
+    vertical-align: middle;
     height: 100%;
     width: 100%;
 }
@@ -332,7 +339,9 @@ li > a:hover {
 /* classess styles ends above */
 /* daypass styles starts below */
 .day-pass-container {
-    background: url("https://yahiyamansuri14.github.io/onefitnessstop/assets/img/slide-2.jpg");
+    /* background-image: url("/assets/img/slide-3.jpg");  right : for local */
+    /* background-image: url("https://source.unsplash.com/random"); right : for remote images*/
+    background: url("/assets/img/slide-2.jpg");
 }
 
 .day-pass-container > h2 {
@@ -481,7 +490,6 @@ li > a:hover {
         height: 300px;
         width: 100vw;
         margin: 10px;
-        border: 1px solid #808080;
         position: relative;
         overflow: hidden;
         transform:translateZ(0);
@@ -496,4 +504,73 @@ li > a:hover {
         padding: 10px;
         width: 90%;
     } 
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin-top: 30px;
+        text-align: center;
+        padding: 16px 0;
+        background-color: #000000;
+        color: white;
+        z-index: 10;
+        box-shadow: 0 1px 10px 0 rgb(0 0 0 / 19% );
+    }
+
+    .hamburger {
+        color: white;
+        font-size: 24px;
+        display: block;
+    }
+
+    input[type=checkbox]:checked ~ .menu {
+        display: block;
+    }
+
+    .classes-parent-container {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .classes-child-container {
+        cursor: pointer;
+        height: 300px;
+        width: 45vw;
+        margin: 10px;
+        position: relative;
+        overflow: hidden;
+        transform:translateZ(0);
+        transition: transform 0.25s ease-out;
+    }
+
+    .icon-container {
+        flex-wrap: wrap;
+    }
+
+    .icon-container-child {
+        height: auto;
+        margin: 3px;
+        width: 49vw;
+    }
+
+    .summary-subheading-container {
+        width: 90%;
+    }
+
+    .summary-subheading {
+        padding: 10px;
+    }
+
+    .form-container {
+        width: 70%;
+    }
+
 }
