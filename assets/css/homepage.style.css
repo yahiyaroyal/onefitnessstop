@@ -341,7 +341,7 @@ li > a {
 .day-pass-container {
     /* background-image: url("/assets/img/slide-3.jpg");  right : for local */
     /* background-image: url("https://source.unsplash.com/random"); right : for remote images*/
-    background: url("/assets/img/slide-2.jpg");
+    background: url("https://yahiyamansuri14.github.io/onefitnessstop/assets/img/slide-2.jpg");
 }
 
 .day-pass-container > h2 {
